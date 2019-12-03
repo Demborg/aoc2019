@@ -20,10 +20,10 @@ s2 = make_dict(stdin.readline())
 intersecting_points = set(s1.keys()).intersection(s2.keys())
 
 #p1
-print(sorted(sum(abs(v) for v in t) for t in intersecting_points))
+print("part 1:", min(sum(abs(v) for v in t) for t in intersecting_points))
 
 #p2
-print(sorted(s1[p] +s2[p] for p in intersecting_points))
+print("part 2:", min(s1[p] +s2[p] for p in intersecting_points))
 
 
 
